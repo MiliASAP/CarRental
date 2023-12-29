@@ -6,12 +6,17 @@
 
 int main()
 {
+	std::cout << std::endl;
+	std::cout << std::endl;
+	std::cout << "             WITAMY             " << std::endl;
+	Sleep(1000);
+	system("cls");
 	std::cout << "              _____     _       " << std::endl;
 	std::cout << "         ____/____|____/        " << std::endl;
 	std::cout << "        /___(O)___|_(O)|        " << std::endl;
 	std::cout << std::endl;
 	std::cout << "--------------------------------" << std::endl;
-	std::cout << "Witamy w wypozyczalni samochodow" << std::endl;
+	std::cout << "Wypozyczalnia samochodow BOHUNEX" << std::endl;
 	std::cout << "--------------------------------" << std::endl;
 	std::cout << std::endl;
 	std::cout << "________________________________" << std::endl;
