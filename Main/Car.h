@@ -1,8 +1,8 @@
 #pragma once
-#include <string>
-#include "Car.h"
 #ifndef CAR
 #define CAR
+#include <string>
+#include "Car.h"
 
 class Car {
 private:
