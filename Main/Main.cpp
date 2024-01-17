@@ -60,6 +60,25 @@ int main()
 			std::cout << "      Witamy wlasciciela     " << std::endl;
 			std::cout << "-----------------------------" << std::endl;
 			std::cout << std::endl;
+			Sleep(500);
+			std::cout << "1. Dodaj samochod" << std::endl;
+			std::cout << "2. Przegladaj posiadane samochody" << std::endl;
+			std::cout << "3. Wroc do panelu glownego" << std::endl;
+			int chooseOwner;
+			std::cin >> chooseOwner;
+			switch (chooseOwner)
+			{
+			case 1:
+				std::cout << "Dodawanie samochodu" << std::endl;
+				break;
+			case 2:
+				std::cout << "Posiadane samochody" << std::endl;
+			case 3:
+				system("cls");
+				main();
+			default:
+				break;
+			}
 		}
 		break;
 	case 2:

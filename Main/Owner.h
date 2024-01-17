@@ -6,4 +6,5 @@
 
 bool Password(std::string input);
 
+
 #endif // !OWNER
