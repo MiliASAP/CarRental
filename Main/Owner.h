@@ -5,9 +5,7 @@
 #include "Owner.h"
 #include "Car.h"
 
-bool Password(std::string input);
-void insertCar();
-void showCars();
-void OwnerMenu();
+bool Password(const std::vector<char>& input);
+int OwnerMenu();
 
 #endif // !OWNER

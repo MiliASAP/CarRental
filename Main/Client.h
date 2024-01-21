@@ -2,6 +2,6 @@
 #ifndef CLIENT
 #define CLIENT
 
-
+void ClientMenu();
 
 #endif // !CLIENT

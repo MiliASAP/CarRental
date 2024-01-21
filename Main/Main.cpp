@@ -1,15 +1,15 @@
 #include <iostream>
 #include <Windows.h>
-#include "Owner.h"
 #include <string>
 #include <vector>
 #include <conio.h>
+#include "Owner.h"
+#include "Client.h"
 
 void Menu();
 
 int main()
 {
-	
 	std::cout << std::endl;
 	std::cout << std::endl;
 	std::cout << "             WITAMY             " << std::endl;
@@ -48,11 +48,7 @@ void Menu() {
 			OwnerMenu();
 			break;
 		case 2:
-			std::cout << std::endl;
-			std::cout << "-----------------------------" << std::endl;
-			std::cout << "        Witaj kliencie       " << std::endl;
-			std::cout << "-----------------------------" << std::endl;
-			std::cout << std::endl;
+			ClientMenu();
 			break;
 		case 3:
 			std::cout << std::endl;
