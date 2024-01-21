@@ -45,58 +45,69 @@ void showCars() {
 
 void OwnerMenu()
 {
-	std::cout << "Wprowadz haslo: "; //has³o to: Admin
-	ch = _getch();
-	while (ch != 13) {
-		input.push_back(ch);
-		std::cout << "*";
+	bool check = true;
+	bool pass = true;
+	
+		std::cout << "Wprowadz haslo: "; //has³o to: Admin
 		ch = _getch();
-	}
-	system("cls");
-	if (Password(input) == false) {
+		while (pass = true) {
+			if (ch != 13) {
+				input.push_back(ch);
+				std::cout << "*";
+				ch = _getch();
+			}
+			if (ch == 8) {
+
+			}
+		}
 		system("cls");
-		std::cout << "Haslo nieprawidlowe" << std::endl;
-		Sleep(1000);
-	}
-	if (Password(input) == true) {
-		std::cout << "Haslo poprawne" << std::endl;
-		Sleep(500);
-		system("cls");
-		std::cout << std::endl;
-		std::cout << "-----------------------------" << std::endl;
-		std::cout << "      Witamy wlasciciela     " << std::endl;
-		std::cout << "-----------------------------" << std::endl;
-		std::cout << std::endl;
-		Sleep(500);
-		std::cout << "1. Dodaj samochod" << std::endl;
-		std::cout << "2. Przegladaj posiadane samochody" << std::endl;
-		std::cout << "3. Wroc do panelu glownego" << std::endl;
-		int chooseOwner;
-		std::cin >> chooseOwner;
-		switch (chooseOwner)
-		{
-		case 1:
-			std::cout << std::endl;
-			std::cout << "Dodawanie samochodu" << std::endl;
+		if (Password(input) == false) {
+			system("cls");
+			std::cout << "Haslo nieprawidlowe" << std::endl;
+			Sleep(1000);
+		}
+		if (Password(input) == true) {
+			std::cout << "Haslo poprawne" << std::endl;
 			Sleep(500);
 			system("cls");
-			insertCar();
-			std::cout << "Samochod zostal wprowadzony poprawnie do bazy danych" << std::endl;
-			Sleep(1000);
-			system("cls");
-			break;
-		case 2:
-			std::cout << "Posiadane samochody" << std::endl;
-			showCars();
-			system("pause");
-			system("cls");
-			break;
-		case 3:
-			system("cls");
+			std::cout << std::endl;
+			std::cout << "-----------------------------" << std::endl;
+			std::cout << "      Witamy wlasciciela     " << std::endl;
+			std::cout << "-----------------------------" << std::endl;
+			while (check == true) {
+			std::cout << std::endl;
+			Sleep(500);
+			std::cout << "1. Dodaj samochod" << std::endl;
+			std::cout << "2. Przegladaj posiadane samochody" << std::endl;
+			std::cout << "3. Wroc do panelu glownego" << std::endl;
+			int chooseOwner;
+			std::cin >> chooseOwner;
+			switch (chooseOwner)
+			{
+			case 1:
+				std::cout << std::endl;
+				std::cout << "Dodawanie samochodu" << std::endl;
+				Sleep(500);
+				system("cls");
+				insertCar();
+				std::cout << "Samochod zostal wprowadzony poprawnie do bazy danych" << std::endl;
+				Sleep(1000);
+				system("cls");
+				break;
+			case 2:
+				std::cout << "Posiadane samochody" << std::endl;
+				showCars();
+				system("pause");
+				system("cls");
+				break;
+			case 3:
+				check = false;
+				system("cls");
 
-		default:
+			default:
 
-			break;
+				break;
+			}
 		}
 	}
 }

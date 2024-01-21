@@ -36,7 +36,7 @@ void Menu() {
 		std::cout << std::endl;
 		std::cout << "1. Wlasciciel" << std::endl;
 		std::cout << "2. Klient" << std::endl;
-		std::cout << "3. Wyjscie" << std::endl;
+		std::cout << "3. Wyjscie " << std::endl;
 		std::cout << std::endl;
 		std::cout << "Wybor opcji: ";
 		int userChoose;
