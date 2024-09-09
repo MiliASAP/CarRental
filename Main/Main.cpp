@@ -26,7 +26,7 @@ void Menu() {
 		std::cout << "        /___(O)___|_(O)|        " << std::endl;
 		std::cout << std::endl;
 		std::cout << "--------------------------------" << std::endl;
-		std::cout << "Wypozyczalnia samochodow BOHUNEX" << std::endl;
+		std::cout << "    Wypozyczalnia samochodow    " << std::endl;
 		std::cout << "--------------------------------" << std::endl;
 		std::cout << std::endl;
 		std::cout << "________________________________" << std::endl;
